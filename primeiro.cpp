@@ -4,5 +4,5 @@ using namespace std;
 
 int main(){
 
-    cout << "Ola Mundo certo \n";
+    cout << "Ola Mundo \n";
 }
