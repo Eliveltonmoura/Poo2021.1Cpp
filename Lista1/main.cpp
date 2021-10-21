@@ -31,9 +31,7 @@ public:
      char setSexo (char sexo ){
             sexo = sexo;
     }
-
     //gets
-
     string getNome (){
         return nome;
     }
@@ -43,11 +41,9 @@ public:
     string getEmail (){
         return email;
     }
-
     string getPalavaChave (){
         return palavraChave;
     }
-
     int getIdade (){
         return idade;
     }
@@ -55,8 +51,7 @@ public:
         return sexo;
     }
     // fução de imprimir
-    void imprimir();
-
+    void imprimir(int num);
 };
  Usuario::Usuario( string nome, string ocupacao, string email, string palavraChave, int idade, char sx ){
         this->nome = nome;
@@ -64,15 +59,35 @@ public:
         this->email = email;
         this->palavraChave=palavraChave;
         this ->idade = idade;
-               sexo = sx;
+               sexo = sx;            
+       
     }
 
- void Usuario::imprimir(){
-    cout >> getNome();    
-    cout >> getOcupacao();
-    cout >> getEmail();
-    cout >> getIdade();
-    cout >> getSexo();
+ void Usuario::imprimir( int num){
+    int op=num;
+    if (op==1){
+    cout << getNome()<<endl;    
+    cout << getOcupacao()<<endl;
+    cout << getEmail()<<endl;
+    cout << getIdade()<<endl;
+    cout << getSexo()<<endl;
+    }
+   else if (op==2){
+    cout << getNome() <<endl;    
+    cout << getOcupacao()<<endl;
+    cout << getEmail() <<endl;
+    cout << getIdade() << endl;
+    cout << getSexo()  << endl;
+    }
+   else if (op=3){
+    cout << getNome() <<endl;    
+    cout << getOcupacao()<<endl;
+    cout << getEmail() <<endl;
+    cout << getIdade() <<endl;
+    cout << getSexo()  <<endl;
+    }
+
+    
  }
 
 int main (){ 
@@ -84,7 +99,7 @@ int main (){
     
    // Usuario p();       
      
-    professor.imprimir();
+    professor.imprimir(1);
     
 
     
