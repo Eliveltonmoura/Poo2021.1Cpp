@@ -66,25 +66,34 @@ public:
  void Usuario::imprimir( int num){
     int op=num;
     if (op==1){
+    cout <<"-----------------------------"<<endl;
     cout << getNome()<<endl;    
     cout << getOcupacao()<<endl;
     cout << getEmail()<<endl;
+    cout << getPalavaChave()<<endl;
     cout << getIdade()<<endl;
     cout << getSexo()<<endl;
+    cout <<"-----------------------------"<<endl;
     }
    else if (op==2){
+   
     cout << getNome() <<endl;    
     cout << getOcupacao()<<endl;
     cout << getEmail() <<endl;
+    cout << getPalavaChave()<<endl;
     cout << getIdade() << endl;
     cout << getSexo()  << endl;
+    cout <<"-----------------------------"<<endl;
     }
    else if (op=3){
+   
     cout << getNome() <<endl;    
     cout << getOcupacao()<<endl;
     cout << getEmail() <<endl;
+    cout << getPalavaChave()<<endl;
     cout << getIdade() <<endl;
     cout << getSexo()  <<endl;
+    cout <<"-----------------------------"<<endl;
     }
 
     
@@ -92,15 +101,16 @@ public:
 
 int main (){ 
      
-    Usuario professor = Usuario("bruna","professor","bruna@gmail.com","prof",18,'M');
-    //Usuario *tecnico = new Usuario("maria","tec","maria@gmail.com","tec",18,'M');
-    //Usuario *aluno = new Usuario("Alicia","estutante","alicia@gmail.com","alu",18,'M');
+    Usuario *professor = new Usuario("bruna","professor","bruna@gmail.com","prof",18,'M');
+    Usuario *tecnico = new Usuario("maria","tec","maria@gmail.com","tec",18,'M');
+    Usuario *aluno = new Usuario("Alicia","estutante","alicia@gmail.com","alu",18,'M');
     // cout >> professor->getNome;
     
    // Usuario p();       
      
-    professor.imprimir(1);
-    
+    professor->imprimir(1);
+    //tecnico.imprimir(2);
+    //aluno.imprimir(3);
 
     
     return 0;
