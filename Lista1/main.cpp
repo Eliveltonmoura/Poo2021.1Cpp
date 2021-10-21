@@ -8,17 +8,10 @@ private:
      string email;
      string palavraChave;
      int idade;
-     char sexo ;  
-public:
-    
-    Usuario( string nome, string ocupacao, string email, string palavraChave, int idade,char sx){
-        this->nome = nome;
-        this->ocupacao = ocupacao;
-        this->email = email;
-        this->palavraChave=palavraChave;
-        this ->idade = idade;
-               sexo = sx;
-    }
+     char sexo;  
+public:    
+    Usuario( string nome, string ocupacao, string email, string palavraChave, int idade, char sx );
+        
     // sets
     void setNome (string nome){
          this->nome = nome;
@@ -58,24 +51,41 @@ public:
     int getIdade (){
         return idade;
     }
-    char getSexo(){
+    char getSexo (){
         return sexo;
     }
+    // fução de imprimir
+    void imprimir();
 
 };
+ Usuario::Usuario( string nome, string ocupacao, string email, string palavraChave, int idade, char sx ){
+        this->nome = nome;
+        this->ocupacao = ocupacao;
+        this->email = email;
+        this->palavraChave=palavraChave;
+        this ->idade = idade;
+               sexo = sx;
+    }
 
-int main (){
+ void Usuario::imprimir(){
+    cout >> getNome();    
+    cout >> getOcupacao();
+    cout >> getEmail();
+    cout >> getIdade();
+    cout >> getSexo();
+ }
 
-    Usuario *p = new Usuario("Alicia","estutante","alicia@gmail.com","Amor",18,'f');
-    //p.setNome("elivelton");
-    //cout << "Ok";
+int main (){ 
      
-    cout<<  p->getNome()+"\n";
-    cout<<  p->getOcupacao()+"\n";
-    cout<<  p->getEmail()+"\n";
-    cout<<  p->getPalavaChave()+"\n";
-    cout<<  p->getIdade()+"\n";
-    cout<<  p->getSexo() +"\n";
+    Usuario professor = Usuario("bruna","professor","bruna@gmail.com","prof",18,'M');
+    //Usuario *tecnico = new Usuario("maria","tec","maria@gmail.com","tec",18,'M');
+    //Usuario *aluno = new Usuario("Alicia","estutante","alicia@gmail.com","alu",18,'M');
+    // cout >> professor->getNome;
+    
+   // Usuario p();       
+     
+    professor.imprimir();
+    
 
     
     return 0;
