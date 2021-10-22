@@ -53,7 +53,7 @@ public:
     char getSexo (){
         return sexo;
     }
-    // fução de imprimir
+    //     chamado a fução por parametro
     void imprimir(int num);
 };
  //construtor
@@ -99,7 +99,6 @@ public:
     cout << getSexo()  <<endl;
     cout <<"-----------------------------"<<endl;
     }
-
     
  }
  // função principal
@@ -110,17 +109,18 @@ int main (){
       3.Aluno      
       */
 
-
-
-     // inicialização do objeto 
+     // inicialização do objetos
     Usuario *professor = new Usuario("bruna","professor","bruna@gmail.com","prof",18,'F');
     Usuario *tecnico = new Usuario("Elivelton","tecnico","velton@alu.ufc.br","tec",25,'M');
     Usuario *aluno = new Usuario("Alicia","estutante","alicia@gmail.com","alu",18,'F');
-         
+             
+    // chamado a fução por argumeto
     professor->imprimir(1);
 
+    //chamado a fução por argumeto
     tecnico->imprimir(2);
-    
+
+    //chamado a fução por argumeto
     aluno->imprimir(3);
 
     
