@@ -71,32 +71,31 @@ public:
     int op=num;
     if (op==1){
     cout <<"-----------------------------"<<endl;
-    cout << getNome()<<endl;    
-    cout << getOcupacao()<<endl;
-    cout << getEmail()<<endl;
-    cout << getPalavaChave()<<endl;
-    cout << getIdade()<<endl;
-    cout << getSexo()<<endl;
+    cout <<"Ocupacao: "<< getOcupacao()<<endl;
+    cout <<"None: "<< getNome() <<endl;     
+    cout << "E-Mail: "<< getEmail() <<endl;
+    cout <<"Palavra Chave: " <<getPalavaChave()<<endl;
+    cout <<"Idade: " << getIdade() <<endl;
+    cout <<"Sexo: " <<getSexo()  <<endl;
     cout <<"-----------------------------"<<endl;
     }
    else if (op==2){
    
-    cout << getNome() <<endl;    
-    cout << getOcupacao()<<endl;
-    cout << getEmail() <<endl;
-    cout << getPalavaChave()<<endl;
-    cout << getIdade() << endl;
-    cout << getSexo()  << endl;
+    cout <<"Ocupacao: "<< getOcupacao()<<endl;
+    cout <<"None: "<< getNome() <<endl;     
+    cout << "E-Mail: "<< getEmail() <<endl;
+    cout <<"Palavra Chave: " <<getPalavaChave()<<endl;
+    cout <<"Idade: " << getIdade() <<endl;
+    cout <<"Sexo: " <<getSexo()  <<endl;
     cout <<"-----------------------------"<<endl;
     }
    else if (op=3){
-   
-    cout << getNome() <<endl;    
-    cout << getOcupacao()<<endl;
-    cout << getEmail() <<endl;
-    cout << getPalavaChave()<<endl;
-    cout << getIdade() <<endl;
-    cout << getSexo()  <<endl;
+    cout <<"Ocupacao: "<< getOcupacao()<<endl;
+    cout <<"None: "<< getNome() <<endl;     
+    cout << "E-Mail: "<< getEmail() <<endl;
+    cout <<"Palavra Chave: " <<getPalavaChave()<<endl;
+    cout <<"Idade: " << getIdade() <<endl;
+    cout <<"Sexo: " <<getSexo()  <<endl;
     cout <<"-----------------------------"<<endl;
     }
     
@@ -110,9 +109,9 @@ int main (){
       */
 
      // inicialização do objetos
-    Usuario *professor = new Usuario("bruna","professor","bruna@gmail.com","prof",18,'F');
-    Usuario *tecnico = new Usuario("Elivelton","tecnico","velton@alu.ufc.br","tec",25,'M');
-    Usuario *aluno = new Usuario("Alicia","estutante","alicia@gmail.com","alu",18,'F');
+    Usuario *professor = new Usuario("Bruna","Professor","bruna@gmail.com","Prof",18,'F');
+    Usuario *tecnico = new Usuario("Elivelton","tecnico","velton@alu.ufc.br","Tec",25,'M');
+    Usuario *aluno = new Usuario("Alicia","Estutante","alicia@gmail.com","Alu",18,'F');
              
     // chamado a fução por argumeto
     professor->imprimir(1);
