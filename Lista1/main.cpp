@@ -4,13 +4,15 @@
  using namespace std;
  //classe usuario
 class Usuario{
-private:
+    // atributos provados
+private: 
      string nome;
      string ocupacao;
      string email;
      string palavraChave;
      int idade;
      char sexo;  
+     // atributos // metados 
 public: 
     //construtor   
     Usuario( string nome, string ocupacao, string email, string palavraChave, int idade, char sx );
