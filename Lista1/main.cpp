@@ -27,7 +27,7 @@ public:
      void setEmail (string email){
          this->email = email;
     }
-     void setPalavraChave (string palavraChave){
+     void setPalavraChave(string palavraChave){
          this->palavraChave = palavraChave;
     }
      int setIdade (int idade){
