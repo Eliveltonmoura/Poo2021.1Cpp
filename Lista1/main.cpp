@@ -4,7 +4,7 @@
  using namespace std;
  //classe usuario
 class Usuario{
-    // atributos provados
+    // atributos privados
 private: 
      string nome;
      string ocupacao;
@@ -65,7 +65,9 @@ public:
         this->email = email;
         this->palavraChave=palavraChave;
         this ->idade = idade;
-               sexo = sx;            
+               sexo = sx;  
+
+             
        
     }
  // fução de imprimer os resutado consutados
@@ -111,19 +113,19 @@ int main (){
       */
 
      // inicialização do objetos
-    Usuario *professor = new Usuario("Bruna","Professor","bruna@gmail.com","Prof",18,'F');
+    Usuario *professor = new Usuario("Bruna","Professor","bruna@gmail.com","Professor",18,'F');
     Usuario *tecnico = new Usuario("Elivelton","tecnico","velton@alu.ufc.br","Tec",25,'M');
     Usuario *aluno = new Usuario("Alicia","Estutante","alicia@gmail.com","Alu",18,'F');
              
     // chamado a fução por argumeto
-    professor->imprimir(1);
+     professor->imprimir(1);
 
     //chamado a fução por argumeto
-    tecnico->imprimir(2);
+     tecnico->imprimir(2);
 
     //chamado a fução por argumeto
-    aluno->imprimir(3);
+     aluno->imprimir(3);
 
-    
+    system("pause");
     return 0;
 }
