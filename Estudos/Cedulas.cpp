@@ -31,13 +31,13 @@ int main()
   r1 = r2 % 1;
 
   cout << valor << endl;
-  cout << n100 << " notas (s) de R$ 100,00" << endl;
-  cout << n50 << " notas (s) de R$ 50,00" << endl;
-  cout << n20 << " notas (s) de R$ 20,00" << endl;
-  cout << n10 << " notas (s) de R$ 10,00" << endl;
-  cout << n5 << " notas (s) de R$ 5,00" << endl;
-  cout << n2 << " notas (s) de R$ 2,00" << endl;
-  cout << n1 << " notas (s) de R$ 1,00" << endl;
+  cout << n100 << " nota (s) de R$ 100,00" << endl;
+  cout << n50 << " nota (s) de R$ 50,00" << endl;
+  cout << n20 << " nota (s) de R$ 20,00" << endl;
+  cout << n10 << " nota (s) de R$ 10,00" << endl;
+  cout << n5 << " nota (s) de R$ 5,00" << endl;
+  cout << n2 << " nota (s) de R$ 2,00" << endl;
+  cout << n1 << " nota (s) de R$ 1,00" << endl;
 
   return 0;
   
