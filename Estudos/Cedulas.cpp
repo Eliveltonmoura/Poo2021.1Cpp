@@ -30,13 +30,15 @@ int main()
   n1 = r2 / 1;
   r1 = r2 % 1;
 
-  cout << n100 << " notas (s) de 100,00" << endl;
-  cout << n50 << " notas (s) de 50,00" << endl;
-  cout << n20 << " notas (s) de 20,00" << endl;
-  cout << n10 << " notas (s) de 10,00" << endl;
-  cout << n5 << " notas (s) de 5,00" << endl;
-  cout << n2 << " notas (s) de 2,00" << endl;
-  cout << n1 << " notas (s) de 1,00" << endl;
+  cout << valor << endl;
+  cout << n100 << " notas (s) de R$ 100,00" << endl;
+  cout << n50 << " notas (s) de R$ 50,00" << endl;
+  cout << n20 << " notas (s) de R$ 20,00" << endl;
+  cout << n10 << " notas (s) de R$ 10,00" << endl;
+  cout << n5 << " notas (s) de R$ 5,00" << endl;
+  cout << n2 << " notas (s) de R$ 2,00" << endl;
+  cout << n1 << " notas (s) de R$ 1,00" << endl;
 
   return 0;
+  
 }
