@@ -66,6 +66,7 @@ int main()
     //x = HPublica.privado; // Erro: Não acessível
 
     x = HPublica.publico; // OK
+    cout<<"Ok"<<endl;
     //Derivada2 HPrivada;
 
     //x = HPrivada.protegido; // Erro: Não acessível
@@ -80,6 +81,6 @@ int main()
     //x = HProtegida.privado; // Erro: Não acessível
 
    // x = HProtegida.publico; // Erro: Não acessível
-   cout << x << endl;
+  
     return 0;
 }

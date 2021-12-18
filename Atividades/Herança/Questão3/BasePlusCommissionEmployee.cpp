@@ -8,7 +8,6 @@ BasePlusCommissionEmployee::BasePlusCommissionEmployee(const string &first, cons
 {
        setBaseSalary(salary);
 }
-
 void BasePlusCommissionEmployee::setBaseSalary(double salary)
 {
     baseSalary = (salary < 0.0) ? 0.0 : salary;
