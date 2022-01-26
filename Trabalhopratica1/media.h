@@ -4,24 +4,26 @@
 
 using namespace std;
 // criação da classe
-class media
+class Media
 {
 private: // atributos privados que vão ser a acessados via gettes e settes
-    string artista;
-    string titulo;
-    string faixa; // coleção
-    string genero;
-    string keywords; // coleção
+    string artista = {};
+    string titulo = {};
+    // array<string> faixa;
+    string genero = {};
+    //string keywords[]; // coleção
 
 public: // metados para fazer a açoes requeridas todos publicos
-    void setArtista(string &);
-    string getArtista();
-    void setTitulo(string &);
-    string getTitulo(string &);
-    void setFaixa();   /// coleção
-    string getFaixa(); //coleção
-    void setGenero(string &);
-    string getGenero();
-    void setKeywords();   //coleção
-    string getKeywords(); //coleção
+    Media(const string &, const string &, const string &);
+
+    void setArtista(const string &);
+    string getArtista() const;
+    void setTitulo(const string &);
+    string getTitulo() const;
+    //  void setFaixa(string &); /// coleção
+    //  string getFaixa();       //coleção
+    void setGenero(const string &);
+    string getGenero() const;
+    //  void setKeywords(string &); //coleção
+    // string getKeywords();       //coleção
 };
