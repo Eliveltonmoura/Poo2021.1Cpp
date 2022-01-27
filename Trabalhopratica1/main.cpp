@@ -1,9 +1,9 @@
-#include "media.h"
+#include "Cd"
 
 int main(int argc, char const *argv[])
 {
 
-    Media n = Media("elivelton", "eu", "cc");
+    Cd n = Cd()
 
     n.setArtista("Maria");
 

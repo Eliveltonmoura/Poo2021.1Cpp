@@ -1,7 +1,7 @@
-all : Media.o
-	g++ Media.o main.cpp -o prog
-main.o : Media.h
-	g++ -c Media.cpp
+all : Midia.o
+	g++ Midia.o main.cpp -o prog
+main.o : Midia.h
+	g++ -c Midia.cpp
 c :
 	rm -rf * .o prog	
 um :
