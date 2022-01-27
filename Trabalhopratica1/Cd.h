@@ -1,6 +1,7 @@
 #include <iostream>
+#include "Midia.h"
 
-class Cd
+class Cd : public Midia
 {
 private:
     int duracao;
@@ -8,12 +9,14 @@ private:
     bool coletanea;
 
 public:
-    void setDuracao();
-    int getDuracao();
+    Cd(const int &, const float &, bool colt);
+    void setDuracao(const &);
 
-    float setVolume();
-    float getVolume();
+    int getDuracao() const;
 
-    void setColetanea();
+    float setVolume(const float &);
+    float getVolume() const;
+
+    void setColetanea(bool colt);
     bool getColetanea();
 };

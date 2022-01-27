@@ -4,17 +4,17 @@
 
 using namespace std;
 // criação da classe
-class Media
+class Midia
 {
 private: // atributos privados que vão ser a acessados via gettes e settes
     string artista = {};
     string titulo = {};
     // array<string> faixa;
     string genero = {};
-    //string keywords[]; // coleção
+    //string keywords; // coleção
 
 public: // metados para fazer a açoes requeridas todos publicos
-    Media(const string &, const string &, const string &);
+    Midia(const string &, const string &, const string &);
 
     void setArtista(const string &);
     string getArtista() const;

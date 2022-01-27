@@ -1,36 +1,36 @@
-#include "media.h"
+#include "midia.h"
 using namespace std;
 
-Media::Media(const string &artista, const string &titulo, const string &genero) // construtor
+Midia::Midia(const string &artista, const string &titulo, const string &genero) // construtor
 {
     this->artista = artista;
     this->titulo = titulo;
     this->genero = genero;
 }
 // Gettes e Settes responsaveis por pegar dados salvos e salva dados nas variaveis que estão privadas
-void Media::setArtista(const string &artista)
+void Midia::setArtista(const string &artista)
 {
     this->artista = artista;
 }
-string Media::getArtista() const
+string Midia::getArtista() const
 {
     return artista;
 }
-void Media::setTitulo(const string &titulo)
+void Midia::setTitulo(const string &titulo)
 {
     this->titulo = titulo;
 }
-string Media::getTitulo() const
+string Midia::getTitulo() const
 {
     return titulo;
 }
 //void media::setFaixa()/// coleção
 //string media::getFaixa()//coleção
-void Media::setGenero(string &genero)
+void Midia::setGenero(string &genero)
 {
     this->genero = genero;
 }
-string Media::getGenero()
+string Midia::getGenero()
 {
     return genero;
 }
