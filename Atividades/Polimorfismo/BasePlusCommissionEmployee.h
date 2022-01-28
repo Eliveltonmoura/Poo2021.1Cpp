@@ -1,21 +1,16 @@
-#include <iostream>
 #include <string>
-#include "CommissionEmployee.h"
-
 using namespace std;
-
-class BasePlusCommissionEmployee : public CommissionEmployee
+#include "CommissionEmployee.h"                              //Declaração da classe CommissionEmployee
+class BasePlusCommissionEmployee : public CommissionEmployee // herança
 {
 private:
-    double baseSalary;
+    double baseSalary; // salario-base
 
 public:
-    BasePlusCommissionEmployee(const string &fist, const string &last,
-                               const string &ssn, double sale, double = 0.0 double = 0.0);
-
+    BasePlusCommissionEmployee(const string &, const string &, const string &,
+                               double = 0.0, double = 0.0, double = 0.0);
     void setBaseSalary(double);
-    string getBaseSalary() const;
-
-    void earnings() const;
+    double getBaseSalary() const;
+    double earnings() const;
     void print() const;
 };

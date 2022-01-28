@@ -1,32 +1,31 @@
 #include "CommissionEmployee.h"
+using namespace std;
 
-CommissionEmployee::CommissionEmployee(const string &fist, const string &last,
-                                       const string &ssn, double sale, double rote)
-    : fistName(fist), lastName(last), socialSecurityNumber(ssn)
-{ // construtos, onde passa os valores para variaveis na primeira execusão.
-
-    setGrossSales(sale);
-    setComissionRate(rote);
-}
-void CommissionEmployee::setFistName(const &fist)
+CommissionEmployee::CommissionEmployee(const string &first, const string &last, const string &ssn, double sales, double rate)
+    : firstName(first), lastName(last), socialSecurityNumber(ssn)
 {
-    this->fistName = fist;
+    setGrossSales(sales);
+    setCommissionRate(rate);
 }
-string CommissionEmployee::getFistName() const
+void CommissionEmployee::setFirstName(const string &first)
 {
-    return fistName;
+    firstName = first;
 }
-void CommissionEmployee::setLastNome(const &last)
+string CommissionEmployee::getFirstName() const
 {
-    this->fistName = last;
+    return firstName;
 }
-string CommissionEmployee::getLastNome() cont
+void CommissionEmployee::setLastName(const string &last)
+{
+    lastName = last;
+}
+string CommissionEmployee::getLastName() const
 {
     return lastName;
 }
-void CommissionEmployee::setSocialSecurityNumber(cosnt string &ssn)
+void CommissionEmployee::setSocialSecurityNumber(const string &ssn)
 {
-    this->getSocialSecurityNumber = ssn;
+    socialSecurityNumber = ssn;
 }
 string CommissionEmployee::getSocialSecurityNumber() const
 {
@@ -34,29 +33,31 @@ string CommissionEmployee::getSocialSecurityNumber() const
 }
 void CommissionEmployee::setGrossSales(double sales)
 {
-    this->grossSales = sales;
+    grossSales = sales;
 }
 double CommissionEmployee::getGrossSales() const
 {
     return grossSales;
 }
-void CommissionEmployee::setComissionRate(double rate)
+void CommissionEmployee::setCommissionRate(double rate)
 {
-    this->comissionRate = rote;
+    commissionRate = rate;
 }
-double CommissionEmployee::gatComissionRote() const
+double CommissionEmployee::getCommissionRate() const
 {
-    return comissionRate;
+    return commissionRate;
 }
 
-void CommissionEmployee::earmins() const
+double CommissionEmployee::earnings() const
 {
-    return getCommissionRote() + getGrossSales();
+    return getCommissionRate() * getGrossSales();
 }
 void CommissionEmployee::print() const
 {
-    cout << "commission employee: " << getFirstName()
-         << ' ' << getLastName() << "\nsocial security number: "
-         << getSocialSecurityNumber() << "\ngross sales: " << getGrossSales()
+    cout << "Commission employee: "
+         << getFirstName() << ' ' << getLastName()
+         << "\nsocial security number: "
+         << getSocialSecurityNumber()
+         << "\nGross sales: " << getGrossSales()
          << "\ncommission rate: " << getCommissionRate();
 }

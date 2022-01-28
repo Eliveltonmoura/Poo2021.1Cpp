@@ -1,30 +1,30 @@
-#include "BasePlusCommissionEmployee.h"
+#include<iostream>
+using namespace std;
+#include"BasePlusCommissionEmployee.h"  
 
-BasePlusCommissionEmployee::BasePlusCommissionEmployee(const string &fist, const string &last,
-                                                       const string &ssn, double sale, double rote double salary)
-    : CommissionEmployee(fist, last, ssn, sales, rote) // chamando explicimate o contrutor da classe basica
+BasePlusCommissionEmployee::BasePlusCommissionEmployee(const string &first, const string &last, const string &ssn,
+                                                       double sales, double rate, double salary)
+    : CommissionEmployee(first,last,ssn,sales,rate)                                                   
 {
-
-    setBaseSalary(salary);
+       setBaseSalary(salary);
 }
-
 void BasePlusCommissionEmployee::setBaseSalary(double salary)
 {
-    this->baseSalary = (salary < 0.0) ? 0.0 : salary;
+    baseSalary = (salary < 0.0) ? 0.0 : salary;
 }
-string BasePlusCommissionEmployee::getBaseSalary() const
+double BasePlusCommissionEmployee::getBaseSalary() const
 {
     return baseSalary;
 }
-void BasePlusCommissionEmployee::earnings() const
+double BasePlusCommissionEmployee::earnings() const
 {
-    return baseSalary + CommissionEmployee::earnings();
+    return getBaseSalary() + CommissionEmployee::earnings();
 }
-void BasePlusCommissionEmployee::print()
-
+void BasePlusCommissionEmployee::print() const
 {
-    cout << "base-salaried ";
+    cout<<"Base-salaried"; 
+    //invoca a função print de CommissionEmployee 
     CommissionEmployee::print();
 
-    cout << "\nbase salary: " << getBaseSalary();
+    cout << "\nbase salary: " << getBaseSalary(); 
 }
