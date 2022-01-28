@@ -1,13 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-#include"BasePlusCommissionEmployee.h"  
+#include "BasePlusCommissionEmployee.h"
 
 BasePlusCommissionEmployee::BasePlusCommissionEmployee(const string &first, const string &last, const string &ssn,
                                                        double sales, double rate, double salary)
-    : CommissionEmployee(first,last,ssn,sales,rate)                                                   
+    : CommissionEmployee(first, last, ssn, sales, rate)
 {
-       setBaseSalary(salary);
+    setBaseSalary(salary);
 }
+
 void BasePlusCommissionEmployee::setBaseSalary(double salary)
 {
     baseSalary = (salary < 0.0) ? 0.0 : salary;
@@ -22,9 +23,11 @@ double BasePlusCommissionEmployee::earnings() const
 }
 void BasePlusCommissionEmployee::print() const
 {
-    cout<<"Base-salaried"; 
-    //invoca a função print de CommissionEmployee 
-    CommissionEmployee::print();
+    cout << "base-salaried commission employee: " << getFirstName() << ' '
+         << getLastName() << "\nsocial security number: " << getSocialSecurityNumber()
+         << "\ngross sales: " << getGrossSales()
+         << "\ncommission rate: " << getCommissionRate();
 
-    cout << "\nbase salary: " << getBaseSalary(); 
+    cout << "\nbase salary: " << getBaseSalary();
+    //CommissionEmployee::print();
 }
