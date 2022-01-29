@@ -16,6 +16,9 @@ int main()
     intDequeStack.push(1);
     intVectorStack.push(1);
     intListStack.push(1);
+
+    cout << intDequeStack.push();
+
     // remove elementos de cada pilha
     intDequeStack.pop();
     intVectorStack.pop();
