@@ -19,4 +19,6 @@ public:
 
     void setColetanea(bool colt);
     bool getColetanea();
+
+    void print();
 };

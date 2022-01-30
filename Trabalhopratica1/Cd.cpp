@@ -40,3 +40,15 @@ bool Cd::getColetanea()
 {
     return coletanea;
 }
+
+void Cd::print()
+{
+
+    cout << "Artista: " << getArtista() << "\n"
+         << "Titulo: " << getTitulo() << "\n"
+         << "lancamento: " << getLansamento() << "\n"
+         << "Genero: " << getGenero() << "\n"
+         << "Duracao: " << getDuracao() << "\n"
+         << "Volume: " << getVolume() << "\n"
+         << endl;
+}

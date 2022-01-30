@@ -10,7 +10,7 @@ private: // atributos privados que vão ser a acessados via gettes e settes
     string artista = {};
     string titulo = {};
     int lansamento = {};
-    // array<string> faixa;
+    // list<string> faixa;
     string genero = {};
     // string keywords; // coleção
 

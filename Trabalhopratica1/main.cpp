@@ -3,9 +3,9 @@
 int main(int argc, char const *argv[])
 {
 
-    Cd n = Cd("aa", "ttt", 2008, "ggg", 3, 2.5, true);
+    Cd n = Cd("Elivelton", "Um Amor", 2008, "Romance", 3, 2.5, true);
 
-    cout << "Teste: " << n.getArtista() << endl;
+    n.print();
 
     return 0;
 }
