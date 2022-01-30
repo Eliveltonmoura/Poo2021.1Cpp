@@ -9,17 +9,21 @@ class Midia
 private: // atributos privados que vão ser a acessados via gettes e settes
     string artista = {};
     string titulo = {};
+    int lansamento = {};
     // array<string> faixa;
     string genero = {};
-    //string keywords; // coleção
+    // string keywords; // coleção
 
 public: // metados para fazer a açoes requeridas todos publicos
-    Midia(const string &, const string &, const string &);
+    Midia(const string &, const string &, int lan, const string &);
 
     void setArtista(const string &);
     string getArtista() const;
     void setTitulo(const string &);
     string getTitulo() const;
+    void setLansamento(int lan);
+    int getLansamento();
+
     //  void setFaixa(string &); /// coleção
     //  string getFaixa();       //coleção
     void setGenero(const string &);

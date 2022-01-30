@@ -1,26 +1,30 @@
+#include <iostream>
 #include "Cd.h"
+//#include "Midia.h"
 
-Cd::Cd(const int &duracao, const float &valume, bool colt)
+Cd::Cd(const string &artista, const string &titulo, int lansamento, const string &genero,
+       int duracao, float valume, bool colt)
+    : Midia(artista, titulo, lansamento, genero) // herança
 {
     this->duracao = duracao;
-    this->valume = valume;
-    getColetanea(colt);
+    this->volume = valume;
+    setColetanea(colt);
 }
 
-void Cd::setDuracao(const int &duracao)
+void Cd::setDuracao(int duracao)
 {
-    this->duracao - duracao;
+    this->duracao = duracao;
 }
-int Cd::getDuracao() const
+int Cd::getDuracao()
 {
     return duracao;
 }
 
-float Cd::setVolume(const float &volume)
+void Cd::setVolume(float volume)
 {
-    this->volume = valume;
+    this->volume = volume;
 }
-float Cd::getVolume() const
+float Cd::getVolume()
 {
     return volume;
 }
