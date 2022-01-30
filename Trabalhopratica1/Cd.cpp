@@ -1,5 +1,8 @@
 #include <iostream>
+#include <string>
 #include "Cd.h"
+using namespace std;
+
 //#include "Midia.h"
 
 Cd::Cd(const string &artista, const string &titulo, int lansamento, const string &genero,

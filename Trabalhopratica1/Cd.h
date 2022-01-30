@@ -9,7 +9,7 @@ private:
     bool coletanea;
 
 public:
-    Cd(const string &, const string &, const string &, int lansamento,
+    Cd(const string &, const string &, int lansamento, const string &,
        int duracao, float volume, bool colt);
     void setDuracao(int duracao);
     int getDuracao();

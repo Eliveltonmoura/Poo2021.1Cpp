@@ -15,13 +15,13 @@ private: // atributos privados que vão ser a acessados via gettes e settes
     // string keywords; // coleção
 
 public: // metados para fazer a açoes requeridas todos publicos
-    Midia(const string &, const string &, int lan, const string &);
+    Midia(const string &, const string &, int lansamento, const string &);
 
     void setArtista(const string &);
     string getArtista() const;
     void setTitulo(const string &);
     string getTitulo() const;
-    void setLansamento(int lan);
+    void setLansamento(int lansamento);
     int getLansamento();
 
     //  void setFaixa(string &); /// coleção
