@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <list>
 
 using namespace std;
 // criação da classe
@@ -24,7 +25,7 @@ public: // metados para fazer a açoes requeridas todos publicos
     void setLansamento(int lansamento);
     int getLansamento();
 
-    //  void setFaixa(string &); /// coleção
+    /// void setFaixa(string &); /// coleção
     //  string getFaixa();       //coleção
     void setGenero(const string &);
     string getGenero() const;
