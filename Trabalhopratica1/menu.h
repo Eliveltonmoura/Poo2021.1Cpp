@@ -2,4 +2,4 @@
 #include <string>
 using namespace std;
 
-void menu();
+void menu(); // função do menu
