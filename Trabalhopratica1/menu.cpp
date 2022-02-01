@@ -35,8 +35,7 @@ void menu()
             cout << "-------------------------Faixas--------------------------\n";
             n.print();
             break;
-        case 3:
-
+        case 3: // aqui faz os castros
             cout << "Cadastrar Faixa  \n";
             cout << "Artista: ";
             cin >> art;
@@ -50,7 +49,8 @@ void menu()
             cin >> dur;
             cout << "Volune: ";
             cin >> vol;
-            // setando os valores nos atributos
+            // setando os valores nos atributos da classe media
+
             n.setArtista(art);
             n.setTitulo(tit);
             n.setLansamento(ano);
