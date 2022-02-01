@@ -1,10 +1,11 @@
-#include "menu.h"
-#include "Cd.h"
+#include "menu.h" // chamada da intefase menu;
+#include "Cd.h"   // chamada da intefase Cd;
 
 void menu()
 {
     bool fasa = true;
     int op;
+    // criação do objeto Cd
     Cd n = Cd("Elivelton", "Um Amor", 2008, "Romance", 3, 2.5, true);
 
     do

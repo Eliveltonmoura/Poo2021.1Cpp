@@ -5,6 +5,7 @@ using namespace std;
 
 //#include "Midia.h"
 
+// classe Cd herda atributos da classe Midia;
 Cd::Cd(const string &artista, const string &titulo, int lansamento, const string &genero,
        int duracao, float valume, bool colt)
     : Midia(artista, titulo, lansamento, genero) // herança

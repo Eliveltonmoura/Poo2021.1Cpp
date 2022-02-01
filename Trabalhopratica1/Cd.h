@@ -10,7 +10,7 @@ private:
 
 public:
     Cd(const string &, const string &, int lansamento, const string &,
-       int duracao, float volume, bool colt);
+       int duracao, float volume, bool colt); // costrutor da clsse Cd
     void setDuracao(int duracao);
     int getDuracao();
 

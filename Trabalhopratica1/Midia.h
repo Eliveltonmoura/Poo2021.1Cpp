@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> // bibliotecas
 #include <string>
 #include <iomanip>
 #include <list>
@@ -16,7 +16,7 @@ private: // atributos privados que vão ser a acessados via gettes e settes
     // string keywords; // coleção
 
 public: // metados para fazer a açoes requeridas todos publicos
-    //listFaixa f = listFaixa(10);
+    // listFaixa f = listFaixa(10);
     Midia(const string &, const string &, int lansamento, const string &);
 
     void setArtista(const string &);

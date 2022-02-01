@@ -4,10 +4,8 @@
 
 int main(int argc, char const *argv[])
 {
-
+    /// clamada da função menu
     menu();
-
-    // list<string> faixa;
 
     return 0;
 }
