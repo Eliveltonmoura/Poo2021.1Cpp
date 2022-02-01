@@ -1,8 +1,8 @@
-all : Midia.o Cd.o menu.o
+all : Midia.o Cd.o menu.o #clama as classes 
 	g++ *.o main.cpp -o prog
-main.o : Midia.h
+main.o : Midia.h # criar os .o 
 	g++ -c *.cpp
 c :
 	rm -rf *.o prog	
-um :
+a : # execução do programa
 	./prog	
