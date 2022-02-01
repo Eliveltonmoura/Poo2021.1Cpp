@@ -16,6 +16,7 @@ private: // atributos privados que vão ser a acessados via gettes e settes
     // string keywords; // coleção
 
 public: // metados para fazer a açoes requeridas todos publicos
+    //listFaixa f = listFaixa(10);
     Midia(const string &, const string &, int lansamento, const string &);
 
     void setArtista(const string &);
@@ -32,3 +33,18 @@ public: // metados para fazer a açoes requeridas todos publicos
     //  void setKeywords(string &); //coleção
     // string getKeywords();       //coleção
 };
+////-------------------------------------------------------------------------------------------------------------
+/*struct listFaixa
+{
+public:
+    int tamanho;
+    int capacidade;
+    string *faixa;
+    listFaixa(int cap);
+    ~listFaixa();
+    void mostraFaixas();
+    void addFaixa(string valor);
+    void removerFaixa(string rfaixa);
+    string salvaFaixas(string ar);
+};
+*/

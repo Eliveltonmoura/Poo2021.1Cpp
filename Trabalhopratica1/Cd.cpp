@@ -43,6 +43,7 @@ bool Cd::getColetanea()
 
 void Cd::print()
 {
+    // f.mostraFaixas();
 
     cout << "Artista: " << getArtista() << "\n"
          << "Titulo: " << getTitulo() << "\n"
@@ -50,5 +51,8 @@ void Cd::print()
          << "Genero: " << getGenero() << "\n"
          << "Duracao: " << getDuracao() << "\n"
          << "Volume: " << getVolume() << "\n"
+         << "---------------------------------------------------------"
          << endl;
 }
+
+//--------------------------------------------------------------------------------------------------------------

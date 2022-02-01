@@ -58,3 +58,52 @@ string Midia::getGenero() const
 
 // void media::setKeywords(); //coleção
 // string media::getKeywords(); //coleção
+
+//------------------------------------------------------------------------------------------------
+/*
+listFaixa::listFaixa(int cap)
+{
+    this->tamanho = 0;
+    this->capacidade = cap;
+    this->faixa = new string[capacidade];
+}
+
+listFaixa::~listFaixa()
+{
+    delete[] this->faixa;
+}
+
+void listFaixa::mostraFaixas()
+{
+    cout << "[";
+    for (int i = 0; i < this->tamanho; i++)
+    {
+        cout << this->faixa[i] << " ";
+    }
+    cout << "]";
+    cout << "\n";
+}
+
+void listFaixa::addFaixa(string valor)
+{
+
+    if (this->tamanho < this->capacidade)
+    {
+        this->faixa[this->tamanho] += valor;
+        this->tamanho += 1;
+    }
+}
+
+void listFaixa::removerFaixa(string rfaixa)
+{
+    for (int i = 0; i < this->tamanho; i++)
+    {
+
+        if (rfaixa == faixa[i])
+        {
+            faixa[i] = "";
+        }
+    }
+}
+
+*/

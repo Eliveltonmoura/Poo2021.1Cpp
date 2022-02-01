@@ -1,11 +1,13 @@
 #include "Cd.h"
+#include "list"
+#include "menu.h"
 
 int main(int argc, char const *argv[])
 {
 
-    Cd n = Cd("Elivelton", "Um Amor", 2008, "Romance", 3, 2.5, true);
-    // n.setFaixa(n);
-    n.print();
+    menu();
+
+    // list<string> faixa;
 
     return 0;
 }
