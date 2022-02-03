@@ -2,7 +2,8 @@
 #include "Midia.h"
 using namespace std;
 
-Midia::Midia(const string &artista, const string &titulo, vector<string> faixas, int lansamento, const string &genero, vector<string> keywords) // construtor de Midia
+Midia::Midia(const string &artista, const string &titulo,
+             vector<string> faixas, int lansamento, const string &genero, vector<string> keywords) // construtor de Midia
 {
     for (string i : faixas) // faixa
     {
