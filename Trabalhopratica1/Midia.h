@@ -34,17 +34,3 @@ public: // metados para fazer a açoes requeridas todos publicos
     vector<string> getKeywords();      // coleção
 };
 ////-------------------------------------------------------------------------------------------------------------
-/*struct listFaixa
-{
-public:
-    int tamanho;
-    int capacidade;
-    string *faixa;
-    listFaixa(int cap);
-    ~listFaixa();
-    void mostraFaixas();
-    void addFaixa(string valor);
-    void removerFaixa(string rfaixa);
-    string salvaFaixas(string ar);
-};
-*/

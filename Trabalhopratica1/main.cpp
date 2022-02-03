@@ -9,34 +9,35 @@
 #include <Midia.h>
 #include "list"
 #include "menu.h"
+#include "Dvd.h"
 using namespace std;
 
 int main()
 {
+
     /// clamada da função menu
     // menu();
-    /*
-        bool compara_lancamento(Midia i, Midia j)
+
+    bool compara_lancamento(Midia i, Midia j)
+    {
+
+        return i.getLansamento() > j.getLansamento();
+    }
+
+    vector<Cd> a(vector<Cd> cd, string artista)
+    {
+        vector<Cd> resposta;
+
+        for (Cd i : cd)
         {
-
-            return i.getLansamento() > j.getLansamento();
-        }
-
-        vector<Cd> a(vector<Cd> cd, string artista)
-        {
-            vector<Cd> resposta;
-
-            for (Cd i : cd)
+            if (i.getArtista() == artista)
             {
-                if (i.getArtista() == artista)
-                {
-                    resposta.push_back(i);
-                }
+                resposta.push_back(i);
             }
-            // sort(resposta.begin(), resposta.end(), compara_lancamento);
-            return resposta;
         }
+        // sort(resposta.begin(), resposta.end(), compara_lancamento);
+        return resposta;
+    }
 
-    */
     return 0;
 }
