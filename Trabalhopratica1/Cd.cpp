@@ -6,12 +6,12 @@ using namespace std;
 //#include "Midia.h"
 
 // classe Cd herda atributos da classe Midia;
-Cd::Cd(const string &artista, const string &titulo, int lansamento, const string &genero,
-       int duracao, float valume, bool colt)
-    : Midia(artista, titulo, lansamento, genero) // herança
+Cd::Cd(const string &artista, const string &titulo, vector<string> faixas, int lansamento, const string &genero,
+       int duracao, float volume, bool colt, vector<string> keywords)
+    : Midia(artista, titulo, faixas, lansamento, genero, keywords) // herança
 {
     this->duracao = duracao;
-    this->volume = valume;
+    this->volume = volume;
     setColetanea(colt);
 }
 

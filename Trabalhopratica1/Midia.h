@@ -1,7 +1,7 @@
 #include <iostream> // bibliotecas
 #include <string>
 #include <iomanip>
-#include <list>
+#include <vector>
 
 using namespace std;
 // criação da classe
@@ -11,13 +11,13 @@ private: // atributos privados que vão ser a acessados via gettes e settes
     string artista = {};
     string titulo = {};
     int lansamento = {};
-    // list<string> faixa;
+    vector<string> faixas;
     string genero = {};
-    // string keywords; // coleção
+    vector<string> keywords; // coleção
 
 public: // metados para fazer a açoes requeridas todos publicos
     // listFaixa f = listFaixa(10);
-    Midia(const string &, const string &, int lansamento, const string &);
+    Midia(const string &, const string &, vector<string>, int lansamento, const string &, vector<string>);
 
     void setArtista(const string &);
     string getArtista() const;
@@ -26,12 +26,12 @@ public: // metados para fazer a açoes requeridas todos publicos
     void setLansamento(int lansamento);
     int getLansamento();
 
-    /// void setFaixa(string &); /// coleção
-    //  string getFaixa();       //coleção
+    void setFaixas(string faixa); /// coleção
+    vector<string> getFaixas();   // coleção
     void setGenero(const string &);
     string getGenero() const;
-    //  void setKeywords(string &); //coleção
-    // string getKeywords();       //coleção
+    void setKeywords(string keywords); // coleção
+    vector<string> getKeywords();      // coleção
 };
 ////-------------------------------------------------------------------------------------------------------------
 /*struct listFaixa

@@ -1,12 +1,23 @@
+#include <vector>
 #include "Midia.h"
 using namespace std;
 
-Midia::Midia(const string &artista, const string &titulo, int lansamento, const string &genero) // construtor de Midia
+Midia::Midia(const string &artista, const string &titulo, vector<string> faixas, int lansamento, const string &genero, vector<string> keywords) // construtor de Midia
 {
+    for (string i : faixas) // faixa
+    {
+        this->setFaixas(i);
+    }
+
     this->artista = artista;
     this->titulo = titulo;
     setLansamento(lansamento);
     this->genero = genero;
+
+    for (string i : keywords) // faixa
+    {
+        this->setKeywords(i);
+    }
 }
 
 /* Os Setters são responsaveis por enserir valores nas variaveis privadas
@@ -36,17 +47,15 @@ int Midia::getLansamento()
     return lansamento;
 }
 /// coleção
-/*void media::setFaixa(string valor)
+void Midia::setFaixas(string faixa)
 {
-    int tamanho = 0;
+    this->faixas.push_back(faixa);
+}
+vector<string> Midia::getFaixas()
+{
+    return this->faixas;
+} // coleção
 
-    if (this->tamanho < this->capacidade)
-    {
-        this->faixas[this->tamanho] = valor;
-        this->tamanho += 1;
-    }
-}*/
-// string media::getFaixa()//coleção
 void Midia::setGenero(const string &genero)
 {
     this->genero = genero;
@@ -56,8 +65,16 @@ string Midia::getGenero() const
     return genero;
 }
 
-// void media::setKeywords(); //coleção
-// string media::getKeywords(); //coleção
+void Midia::setKeywords(string keyword)
+{
+
+    this->keywords.push_back(keyword);
+
+} // coleção
+vector<string> Midia::getKeywords()
+{
+    return this->keywords;
+} // coleção
 
 //------------------------------------------------------------------------------------------------
 /*
