@@ -35,7 +35,7 @@ int main()
                 resposta.push_back(i);
             }
         }
-        // sort(resposta.begin(), resposta.end(), compara_lancamento);
+        sort(resposta.begin(), resposta.end(), compara_lancamento);
         return resposta;
     }
 
