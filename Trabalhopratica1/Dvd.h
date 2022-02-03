@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 #include "Midia.h"
+#ifndef __trabalhopratica1_Dvd__
+#define __trabalhopratica1_Dvd__
 using namespace std;
 
 class Dvd : public Midia
@@ -13,7 +15,7 @@ private:
 
 public:
    Dvd(const string &, const string &, vector<string>, int lansamento, const string &, vector<string>,
-       int duracao, float volume, bool colt, vector<string>, vector<string>, vector<string>); // costrutor da clsse DVD
+       vector<string>, vector<string>, vector<string>); // costrutor da clsse DVD
 
    void setFormatoAudio(string FormatoAudio);
    vector<string> getFormatoAudio();
@@ -24,3 +26,4 @@ public:
    void setLegenda(string legenda);
    vector<string> getLegenda();
 };
+#endif

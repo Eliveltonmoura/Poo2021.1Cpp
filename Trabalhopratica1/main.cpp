@@ -1,14 +1,7 @@
 #include <iostream>
-#include <algorithm>
-#include <map>
-#include <iterator>
-#include <utility>
-#include <string>
-#include <vector>
+#include "DrivesFucao.h"
+#include "Midia.h"
 #include "Cd.h"
-#include <Midia.h>
-#include "list"
-#include "menu.h"
 #include "Dvd.h"
 using namespace std;
 
@@ -18,13 +11,13 @@ int main()
     /// clamada da função menu
     // menu();
 
-    bool compara_lancamento(Midia i, Midia j)
-    {
+    /*
+     bool compara_lancamento(Midia i, Midia j)
+     {
+         return i.getLansamento() > j.getLansamento();
 
-        return i.getLansamento() > j.getLansamento();
-    }
 
-    vector<Cd> a(vector<Cd> cd, string artista)
+    vector<Cd> artistas(vector<Cd> cd, string artista)
     {
         vector<Cd> resposta;
 
@@ -35,9 +28,8 @@ int main()
                 resposta.push_back(i);
             }
         }
-        sort(resposta.begin(), resposta.end(), compara_lancamento);
-        return resposta;
-    }
+        /*sort(resposta.begin(), resposta.end(), compara_lancamento);
+        return resposta;*/
 
     return 0;
 }

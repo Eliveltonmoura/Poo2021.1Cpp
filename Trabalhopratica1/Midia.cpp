@@ -1,9 +1,12 @@
+#include <iostream>
+#include <string>
 #include <vector>
 #include "Midia.h"
 using namespace std;
 
 Midia::Midia(const string &artista, const string &titulo,
-             vector<string> faixas, int lansamento, const string &genero, vector<string> keywords) // construtor de Midia
+             vector<string> faixas, int lansamento, const string &genero,
+             vector<string> keywords) // construtor de Midia
 {
     for (string i : faixas) // faixa
     {
@@ -15,9 +18,9 @@ Midia::Midia(const string &artista, const string &titulo,
     setLansamento(lansamento);
     this->genero = genero;
 
-    for (string i : keywords) // faixa
+    for (string j : keywords) // keywords
     {
-        this->setKeywords(i);
+        this->setKeywords(j);
     }
 }
 

@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Midia.h"
+#ifndef __trabalhopratica1_Cd__
+#define __trabalhopratica1_Cd__
 using namespace std;
 class Cd : public Midia
 {
@@ -21,3 +23,4 @@ public:
     bool getColetanea();
     void print();
 };
+#endif

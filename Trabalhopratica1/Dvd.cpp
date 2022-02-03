@@ -3,8 +3,7 @@
 // clsse DVD feita
 
 Dvd::Dvd(const string &artista, const string &titulo, vector<string> faixas, int lansamento,
-         const string &genero, vector<string> keywords, int duracao, float volume,
-         bool colt, vector<string> FormatoAudio, vector<string> FormatoTela, vector<string> legenda)
+         const string &genero, vector<string> keywords, vector<string> FormatoAudio, vector<string> FormatoTela, vector<string> legenda)
     : Midia(artista, titulo, faixas, lansamento, genero, keywords) /// herança dvd
 {
     for (string e : formatoAudio) // faixa

@@ -1,7 +1,10 @@
+
 #include <iostream> // bibliotecas
 #include <string>
 #include <iomanip>
 #include <vector>
+#ifndef __trabalhopratica1_Midia__
+#define __trabalhopratica1_Midia__
 
 using namespace std;
 // criação da classe
@@ -11,13 +14,14 @@ private: // atributos privados que vão ser a acessados via gettes e settes
     string artista = {};
     string titulo = {};
     int lansamento = {};
-    vector<string> faixas;
+    vector<string> faixas; // Coleção
     string genero = {};
     vector<string> keywords; // coleção
 
 public: // metados para fazer a açoes requeridas todos publicos
     // listFaixa f = listFaixa(10);
-    Midia(const string &, const string &, vector<string>, int lansamento, const string &, vector<string>);
+    Midia(const string &, const string &, vector<string>,
+          int lansamento, const string &, vector<string>);
 
     void setArtista(const string &);
     string getArtista() const;
@@ -33,4 +37,6 @@ public: // metados para fazer a açoes requeridas todos publicos
     void setKeywords(string keywords); // coleção
     vector<string> getKeywords();      // coleção
 };
+
+#endif
 ////-------------------------------------------------------------------------------------------------------------
