@@ -46,4 +46,5 @@ void Dvd::setLegenda(string leg)
 }
 vector<string> Dvd::getLegenda()
 {
+    return this->legenda;
 }
