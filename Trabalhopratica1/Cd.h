@@ -12,7 +12,7 @@ private:
 
 public:
     Cd(const string &, const string &, vector<string>, int lansamento, const string &, vector<string>,
-       int duracao, float volume, bool colt); // costrutor da clsse Cd
+       int duracao, float volume); // costrutor da clsse Cd
     void setDuracao(int duracao);
     int getDuracao();
 

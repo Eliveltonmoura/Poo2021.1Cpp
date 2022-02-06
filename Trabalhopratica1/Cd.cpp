@@ -1,19 +1,18 @@
 #include <iostream>
 #include <string>
 #include "Cd.h"
+#include <vector>
 using namespace std;
 
 //#include "Midia.h"
 
 // classe Cd herda atributos da classe Midia;
 Cd::Cd(const string &artista, const string &titulo, vector<string> faixas, int lansamento,
-       const string &genero, vector<string> keywords,
-       int duracao, float volume, bool colt)
+       const string &genero, vector<string> keywords, int duracao, float volume)
     : Midia(artista, titulo, faixas, lansamento, genero, keywords) // herança
 {
     this->duracao = duracao;
     this->volume = volume;
-    setColetanea(colt);
 }
 
 void Cd::setDuracao(int duracao)
@@ -41,20 +40,6 @@ void Cd::setColetanea(bool colt)
 bool Cd::getColetanea()
 {
     return coletanea;
-}
-
-void Cd::print()
-{
-    // f.mostraFaixas();
-
-    cout << "Artista: " << getArtista() << "\n"
-         << "Titulo: " << getTitulo() << "\n"
-         << "lancamento: " << getLansamento() << "\n"
-         << "Genero: " << getGenero() << "\n"
-         << "Duracao: " << getDuracao() << "\n"
-         << "Volume: " << getVolume() << "\n"
-         << "---------------------------------------------------------"
-         << endl;
 }
 
 //--------------------------------------------------------------------------------------------------------------

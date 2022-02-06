@@ -8,13 +8,15 @@ Midia::Midia(const string &artista, const string &titulo,
              vector<string> faixas, int lansamento, const string &genero,
              vector<string> keywords) // construtor de Midia
 {
+
+    this->artista = artista;
+    this->titulo = titulo;
+
     for (string i : faixas) // faixa
     {
         this->setFaixas(i);
     }
 
-    this->artista = artista;
-    this->titulo = titulo;
     setLansamento(lansamento);
     this->genero = genero;
 
@@ -42,6 +44,15 @@ string Midia::getTitulo() const
 {
     return titulo;
 }
+void Midia::setFaixas(string faixa)
+{
+    this->faixas.push_back(faixa);
+}
+vector<string> Midia::getFaixas()
+{
+    return this->faixas;
+} // coleção
+
 void Midia::setLansamento(int lansamento)
 {
     this->lansamento = lansamento;
@@ -51,14 +62,6 @@ int Midia::getLansamento()
     return lansamento;
 }
 /// coleção
-void Midia::setFaixas(string faixa)
-{
-    this->faixas.push_back(faixa);
-}
-vector<string> Midia::getFaixas()
-{
-    return this->faixas;
-} // coleção
 
 void Midia::setGenero(const string &genero)
 {

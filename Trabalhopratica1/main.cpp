@@ -7,30 +7,17 @@
 #include <vector>
 #include "Cd.h"
 #include "Dvd.h"
+#include "drive.h"
 using namespace std;
-bool compara_lancamento(Midia i, Midia j)
-{
-    return i.getLansamento() > j.getLansamento();
-}
-vector<Cd> artistas(vector<Cd> cd, string artista)
-{
-    vector<Cd> resposta;
+// Quetão 1
 
-    for (Cd i : cd)
-    {
-        if (i.getArtista() == artista)
-        {
-            resposta.push_back(i);
-        }
-    }
-    sort(resposta.begin(), resposta.end(), compara_lancamento);
-    return resposta;
-}
-
-int main()
+int main() // prin
 {
 
-    // vector<Cd> c = Cd("Artista", "titulo", "faixa", 2222, "genero", "000", 2, 3.3);
+    vector<string> artista;
+    artista.push_back("elivelton");
+    artista.push_back("Matheus");
+    artista.push_back("Alicia");
 
     return 0;
 }
