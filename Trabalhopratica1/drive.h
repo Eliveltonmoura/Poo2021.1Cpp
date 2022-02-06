@@ -10,9 +10,12 @@ using namespace std;
 #ifndef __drive__
 #define __drive__
 // primeira questão
-vector<Cd> artista(vector<Cd>, string);
+vector<Cd> getCdEscritor(vector<Cd>, string);
 
 // segunda questão
-vector<Dvd> artista(vector<Dvd>, string);
+vector<Dvd> getDvdEscritor(vector<Dvd>, string);
+
+// segunda questão
+vector<Dvd> getMidiaEscritor(vector<Midia>, string);
 
 #endif
