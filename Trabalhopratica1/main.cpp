@@ -94,5 +94,13 @@ int main()
     keywordsdvd01.push_back("Forro");
     keywordsdvd01.push_back("envangelico");
 
+    vector<string> formatoAud01;
+    formatoAud01.push_back("mp4");
+    formatoAud01.push_back("mp4");
+
+    vector<string> formatotela;
+    formatotela.push_back("4:4");
+    formatotela.push_back("4:4");
+
     return 0;
 }
