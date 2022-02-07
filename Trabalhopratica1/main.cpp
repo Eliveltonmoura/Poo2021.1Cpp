@@ -58,13 +58,12 @@ int main()
     duracaocd.push_back(3);
 
     vector<float> volumecd;
-    volumecd.push_back(2, 4);
-    volumecd.push_back(2, 2);
+    volumecd.push_back(2.4);
+    volumecd.push_back(2.2);
 
     //---------------------------------------------------------------------dvd
 
-    vector<string>
-        artistadvd;
+    vector<string> artistadvd;
     artistadvd.push_back("Joao Gomes");
     artistadvd.push_back("Aline barros");
 
