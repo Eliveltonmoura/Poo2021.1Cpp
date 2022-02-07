@@ -19,7 +19,8 @@ bool compara_titulos(Midia i, Midia j)
 {
     return i.getTitulo() > j.getTitulo();
 }
-// a) Dado o nome do artista, exibir o nome de todos os CDs de sua autoria, ordenados pela data de lançamento;
+/*a) Dado o nome do artista, exibir o nome de todos os CDs de sua autoria,
+ordenados pela data de lançamento;*/
 vector<Cd> getCdEscritor(vector<Cd> cd, string artistas)
 {
     vector<Cd> resposta;
@@ -36,7 +37,8 @@ vector<Cd> getCdEscritor(vector<Cd> cd, string artistas)
     return resposta;
 }
 
-// b) Dado o nome do artista, exibir o nome de todos os DVDs de sua autoria, ordenados pela data de lançamento;
+/* b) Dado o nome do artista, exibir o nome de todos os DVDs de sua autoria,
+ordenados pela data de lançamento;*/
 
 vector<Dvd> getDvdEscritor(vector<Dvd> dvd, string artistas)
 {
@@ -54,8 +56,8 @@ vector<Dvd> getDvdEscritor(vector<Dvd> dvd, string artistas)
     return resposta;
 }
 
-// c) Dado o nome do artista, exibir o nome de todas as mídias de sua autoria, ordenados pela data de lançamento;
-
+/* c) Dado o nome do artista, exibir o nome de todas as mídias de sua autoria,
+ordenados pela data de lançamento;*/
 vector<Midia> getMidiaEscritor(vector<Midia> midia, string artistas)
 {
     vector<Midia> resposta;
