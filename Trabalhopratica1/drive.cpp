@@ -40,7 +40,7 @@ vector<Cd> getCdEscritor(vector<Cd> cd, string artista)
 
 vector<Dvd> getDvdEscritor(vector<Dvd> Dvd, string artistas)
 {
-    vector<Cd> resposta;
+    vector<Dvd> resposta;
 
     for (Dvd i : Dvd)
     {
@@ -56,7 +56,7 @@ vector<Dvd> getDvdEscritor(vector<Dvd> Dvd, string artistas)
 
 // Terceira questão
 
-vector<Cd> getMidiaEscritor(vector<Midia> Dvd, string artistas)
+vector<Cd> getMidiaEscritor(vector<Midia> Midia, string artistas)
 {
     vector<Midia> resposta;
 
@@ -70,4 +70,9 @@ vector<Cd> getMidiaEscritor(vector<Midia> Dvd, string artistas)
     sort(resposta.begin(), resposta.end(), compara_lancamento);
 
     return resposta;
+}
+
+// Quarta questão
+vector<Cd> getMidiaAno(vector<Cd>, vector<Dvd> int)
+{
 }
