@@ -15,7 +15,11 @@ vector<Cd> getCdEscritor(vector<Cd>, string);
 // segunda questão
 vector<Dvd> getDvdEscritor(vector<Dvd>, string);
 
-// segunda questão
-vector<Dvd> getMidiaEscritor(vector<Midia>, string);
+// segunda terceira
+vector<Midia> getMidiaEscritor(vector<Midia>, string);
+
+// Quarta questão
+
+// vector<Midia> getMidiaAno(vector<Cd>, vector<Dvd> int);
 
 #endif
