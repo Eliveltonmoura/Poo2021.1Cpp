@@ -20,6 +20,7 @@ private: // atributos privados que vão ser a acessados via gettes e settes
 
 public: // metados para fazer a açoes requeridas todos publicos
     // listFaixa f = listFaixa(10);
+    Midia();
     Midia(const string &, const string &, vector<string>,
           int lansamento, const string &, vector<string>);
 
