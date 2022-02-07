@@ -19,7 +19,7 @@ bool compara_titulos(Midia i, Midia j)
 {
     return i.getTitulo() > j.getTitulo();
 }
-// primeira questão
+// a) Dado o nome do artista, exibir o nome de todos os CDs de sua autoria, ordenados pela data de lançamento;
 vector<Cd> getCdEscritor(vector<Cd> cd, string artistas)
 {
     vector<Cd> resposta;
@@ -36,7 +36,7 @@ vector<Cd> getCdEscritor(vector<Cd> cd, string artistas)
     return resposta;
 }
 
-// segunda questão
+// b) Dado o nome do artista, exibir o nome de todos os DVDs de sua autoria, ordenados pela data de lançamento;
 
 vector<Dvd> getDvdEscritor(vector<Dvd> dvd, string artistas)
 {
@@ -54,7 +54,7 @@ vector<Dvd> getDvdEscritor(vector<Dvd> dvd, string artistas)
     return resposta;
 }
 
-// Terceira questão
+// c) Dado o nome do artista, exibir o nome de todas as mídias de sua autoria, ordenados pela data de lançamento;
 
 vector<Midia> getMidiaEscritor(vector<Midia> midia, string artistas)
 {
@@ -72,7 +72,8 @@ vector<Midia> getMidiaEscritor(vector<Midia> midia, string artistas)
     return resposta;
 }
 
-// Quarta questão
+// d) Dado um ano, exibir todas as mídias lançadas naquele ano, independente do artista,
+// ordenados alfabeticamente (não haverá distinção entre CD e DVD);
 vector<Midia> getMidiaAno(vector<Cd> cd, vector<Dvd> dvd, int lansamento)
 {
     vector<Midia> resposta;
@@ -85,11 +86,11 @@ vector<Midia> getMidiaAno(vector<Cd> cd, vector<Dvd> dvd, int lansamento)
         }
     }
 
-    for (Dvd j : dvd)
+    for (Dvd i : dvd)
     {
-        if (j.getLansamento() == lansamento)
+        if (i.getLansamento() == lansamento)
         {
-            resposta.push_back(j);
+            resposta.push_back(i);
         }
     }
 
