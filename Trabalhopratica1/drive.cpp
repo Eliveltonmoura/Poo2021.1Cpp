@@ -20,13 +20,13 @@ bool compara_titulos(Midia i, Midia j)
     return i.getTitulo() > j.getTitulo();
 }
 // primeira questão
-vector<Cd> getCdEscritor(vector<Cd> cd, string artista)
+vector<Cd> getCdEscritor(vector<Cd> cd, string artistas)
 {
     vector<Cd> resposta;
 
     for (Cd i : cd)
     {
-        if (i.getArtista() == artista)
+        if (i.getArtista() == artistas)
         {
             resposta.push_back(i);
         }
@@ -38,11 +38,11 @@ vector<Cd> getCdEscritor(vector<Cd> cd, string artista)
 
 // segunda questão
 
-vector<Dvd> getDvdEscritor(vector<Dvd> Dvd, string artistas)
+vector<Dvd> getDvdEscritor(vector<Dvd> dvd, string artistas)
 {
     vector<Dvd> resposta;
 
-    for (Dvd i : Dvd)
+    for (Dvd i : dvd)
     {
         if (i.getArtista() == artistas)
         {
@@ -56,11 +56,11 @@ vector<Dvd> getDvdEscritor(vector<Dvd> Dvd, string artistas)
 
 // Terceira questão
 
-vector<Midia> getMidiaEscritor(vector<Midia> Midia, string artistas)
+vector<Midia> getMidiaEscritor(vector<Midia> midia, string artistas)
 {
     vector<Midia> resposta;
 
-    for (Midia i : Midia)
+    for (Midia i : midia)
     {
         if (i.getArtista() == artistas)
         {
