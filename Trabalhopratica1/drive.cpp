@@ -73,27 +73,27 @@ vector<Midia> getMidiaEscritor(vector<Midia> midia, string artistas)
 }
 
 // Quarta questão
-/*vector<Midia> getMidiaAno(vector<Cd>, vector<Dvd> int lansamentos)
+vector<Midia> getMidiaAno(vector<Cd> cd, vector<Dvd> dvd, int lansamento)
 {
     vector<Midia> resposta;
 
-    for (Cd i : Cd)
+    for (Cd i : cd)
     {
-        if (i.getLansamento == lansamentos)
+        if (i.getLansamento() == lansamento)
         {
             resposta.push_back(i);
         }
     }
 
-    for (Dvd i : Dvd)
+    for (Dvd j : dvd)
     {
-        if (i.getLansamento == lansamentos)
+        if (j.getLansamento() == lansamento)
         {
-            resposta.push_back(i);
+            resposta.push_back(j);
         }
     }
 
     sort(resposta.begin(), resposta.end(), compara_titulos);
 
     return resposta;
-}*/
+}
