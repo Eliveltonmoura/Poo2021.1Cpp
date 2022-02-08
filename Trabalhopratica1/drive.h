@@ -20,6 +20,8 @@ vector<Midia> getMidiaEscritor(vector<Midia>, string);
 
 // Quarta questão
 
-// vector<Midia> getMidiaAno(vector<Cd>, vector<Dvd> int);
+vector<Midia> getMidiaAno(vector<Cd>, vector<Dvd>, int);
+
+// void print();
 
 #endif
